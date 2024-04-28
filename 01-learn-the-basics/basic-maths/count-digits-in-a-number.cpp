@@ -12,7 +12,13 @@ int digitsInNumber(long long number) {
   return numberOfDigits;
 }
 
+// people use snake case in cpp
+int better_count_digits(int n) {
+  int digits = floor(log10(n) + 1);
+  return digits;
+}
+
 int main() {
-  cout << digitsInNumber(123);
+  cout << better_count_digits(123);
   return 0;
 }
